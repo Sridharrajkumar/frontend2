@@ -1,6 +1,6 @@
 
-import React from "react";
-import ExpenseItem from "./components/ExpenseItem";
+import React from 'react';
+import Expenses from "./components/Expense/Expenses";
 
 function App() {
 
@@ -13,17 +13,7 @@ function App() {
   ]
   return (
     <div>
-      {
-        
-        expenses.map((element )=> {
-           return <ExpenseItem title={element.title} amount={element.amount} date={element.date} location={element.LocationOfExpenditure} />
-        })
-      }
-      {/* <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date} location={expenses[0].LocationOfExpenditure}></ExpenseItem>
-      <ExpenseItem title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date} location={expenses[1].LocationOfExpenditure}></ExpenseItem>
-      <ExpenseItem title={expees[2].title} amount={expenses[2].amount} date={expenses[2].date} location={expenses[2].LocationOfExpenditure}></ExpenseItem>
-      <ExpenseItem title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date} location={expenses[3].LocationOfExpenditure}></ExpenseItem>
-      */}
+      <Expenses items={expenses} />
     </div>
   );
 }
