@@ -22,9 +22,22 @@ function ExpensesForm(){
         userDate(event.target.value);
     }
 
+    function formSubmit(event)
+    {
+        event.preventDefault();
+
+        const expensesData={
+            title:title,
+            amount:oldAmount,
+            date:new Date(oldDate)
+        }
+
+        console.log(expensesData);
+    }
+
 
     return(
-        <form>
+        <form onSubmit={formSubmit}>
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                   <label>Title</label>
