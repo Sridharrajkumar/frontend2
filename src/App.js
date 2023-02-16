@@ -8,7 +8,7 @@ const dummyexpenses=[
   {id:'e1',title:'car insurance', amount:500.50 ,date: new Date(2023, 0, 6) , LocationOfExpenditure:'car showroom'},
   {id:'e2',title:'bike insurance', amount:255.60 ,date: new Date(2022, 3, 6) , LocationOfExpenditure:'bike showroom'},
   {id:'e3',title:'house insurance', amount:1050.70 ,date: new Date(2021, 6, 6) , LocationOfExpenditure:'house emi'},
-  {id:'e4',title:'hotel', amount:50.50 ,date: new Date(2020, 11, 6) , LocationOfExpenditure:'hotel restaurant'},
+  {id:'e4',title:'hotel', amount:50.50 ,date: new Date(2023, 11, 6) , LocationOfExpenditure:'hotel restaurant'},
    
 ]
 
