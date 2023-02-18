@@ -25,7 +25,7 @@ function Expense({items}){
       return (<div>
        <ExpenseItem key={element.id} title={element.title} amount={element.amount} date={element.date} location={element.LocationOfExpenditure} />
        <p>Only single Expense here. Please add more...</p>
-         </div>
+       </div>
     )
       
    })
