@@ -3,6 +3,7 @@ import ExpenseItem from "./ExpenseItem";
 //import "./Expenses.css";
 import Card from "../UI/Card"
 import ExpensesFilter from './ExpensesFilter';
+import ExpensesChart from './ExpensesChart';
 
 function Expense({items}){
   const[filteredYear,setFilteredYear]=useState('2020');
@@ -18,7 +19,7 @@ function Expense({items}){
 
   let expensesContent=<p>No Expenses Is Found</p>
   
-  if(filtersExpensesYear.length==1)
+  if(filtersExpensesYear.length === 1)
   {
     expensesContent=filtersExpensesYear.map((element )=> {
       return (<div>
@@ -41,6 +42,7 @@ function Expense({items}){
       <div>
       <Card>
       <ExpensesFilter selected={filteredYear} onChangeFilter={filterchangeHandler}/>
+      <ExpensesChart expenses={filtersExpensesYear}/>
       {expensesContent}
     </Card>
     </div>
